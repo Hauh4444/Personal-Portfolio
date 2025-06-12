@@ -1,0 +1,30 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    gap: 15px;
+
+    .school {
+        padding: 5px 10px;
+        border: 1px solid rgba(58, 190, 255, 0.5);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            margin: 0;
+            font-size: 21px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .info {
+            text-align: right;
+        }
+    }
+}

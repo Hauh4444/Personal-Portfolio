@@ -1,0 +1,36 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .item {
+        width: fit-content;
+        min-width: 10%;
+        max-width: 15%;
+        padding: 5px 10px;
+        border: 1px solid rgba(58, 190, 255, 0.5);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        gap: 8px;
+        font-size: 20px;
+        color: #fefffe;
+        transition: 0.5s ease;
+
+        &:hover {
+            cursor: default;
+            color: #3abeff;
+        }
+
+        svg {
+            position: relative;
+            top: 1px;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+:root {
+  font-family: "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+:root,
+html,
+body {
+  margin: 0;
+}
