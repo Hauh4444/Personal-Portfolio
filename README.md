@@ -16,7 +16,7 @@ Welcome to my personal portfolio! This site serves as a central place to share w
 ## 🗂 Tech Stack
 
 - **Frontend:** React
-- **Styling:** CSS
+- **Styling:** CSS, Material UI
 - **Deployment:** AWS Amplify
 
 ## 🚀 Running Locally
