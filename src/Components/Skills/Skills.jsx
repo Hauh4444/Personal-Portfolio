@@ -3,7 +3,7 @@ import { FaJava, FaHtml5, FaCss3Alt, FaSass, FaPhp, FaRust, FaPython, FaDatabase
 import { IoLogoJavascript } from "react-icons/io5";
 import { LuArrowUpDown } from "react-icons/lu";
 import { SiVite, SiFlask, SiDjango, SiSqlite } from "react-icons/si";
-import { DiJqueryLogo } from "react-icons/di";
+import { DiDocker, DiJqueryLogo, DiMongodb } from "react-icons/di";
 import { TbBrandMysql } from "react-icons/tb";
 
 // Stylesheets
@@ -23,6 +23,7 @@ const Skills = () => {
         { icon: <FaDatabase />, title: "SQL" },
         { icon: <LuArrowUpDown />, title: "Ajax" },
         { icon: <FaReact />, title: "React" },
+        { icon: <FaReact />, title: "React Native" },
         { icon: <FaVuejs />, title: "Vue" },
         { icon: <SiVite />, title: "Vite" },
         { icon: <FaNodeJs />, title: "Node.js" },
@@ -30,7 +31,9 @@ const Skills = () => {
         { icon: <SiDjango />, title: "Django" },
         { icon: <DiJqueryLogo />, title: "jQuery" },
         { icon: <TbBrandMysql />, title: "MySQL" },
+        { icon: <DiMongodb />, title: "MongoDB" },
         { icon: <SiSqlite />, title: "SQLite" },
+        { icon: <DiDocker />, title: "Docker" },
     ]
 
 
