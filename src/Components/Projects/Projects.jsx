@@ -3,13 +3,17 @@ import { Button } from "@mui/material";
 
 // External Icons
 import { FaGithub } from "react-icons/fa";
-import { FaCss3Alt, FaReact, FaSass, FaRust } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaSass, FaRust, FaCloud, FaLock, FaJava, FaTools } from "react-icons/fa";
 import { SiFlask, SiSqlite } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
+import { DiReact, DiDocker, DiMongodb } from "react-icons/di";
+import { IoIosPeople } from "react-icons/io";
 
 // Internal Assets
 import auctionHouseImage from "@/assets/auction_house.png";
 import eventManagementImage from "@/assets/event_management.png";
+import jobPortalAppImage from "@/assets/job_portal_app.jpg";
+import jobPortalImage from "@/assets/job_portal.jpg";
 
 // Stylesheets
 import "./Projects.css";
@@ -38,6 +42,29 @@ const Projects = () => {
                 { icon: <SiSqlite />, title: "SQLite" },
             ],
             repository: "https://github.com/Hauh4444/Event-Management",
+        },
+        {
+            title: "Job Portal Application",
+            background: jobPortalAppImage,
+            technologies: [
+                { icon: <FaReact />, title: "React Native" },
+                { icon: <DiReact />, title: "Expo" },
+                { icon: <IoIosPeople />, title: "Context API" },
+                { icon: <FaCloud />, title: "REST API" },
+                { icon: <FaLock />, title: "Secure Storage" },
+            ],
+            repository: "https://github.com/Hauh4444/Job-Portal-App",
+        },
+        {
+            title: "Job Portal API",
+            background: jobPortalImage,
+            technologies: [
+                { icon: <FaJava />, title: "Java" },
+                { icon: <FaTools />, title: "Java CLI" },
+                { icon: <DiMongodb />, title: "MongoDB" },
+                { icon: <DiDocker />, title: "Docker" },
+            ],
+            repository: "https://github.com/Hauh4444/Job-Portal",
         },
     ]
 
