@@ -19,7 +19,7 @@ import jobPortalImage from "@/assets/job_portal.jpg";
 import "./Projects.css";
 
 
-const Projects = () => {
+const Projects = ({ ref }) => {
     const projects = [
         {
             title: "Auction House/E-commerce System",
@@ -71,7 +71,7 @@ const Projects = () => {
 
     return (
         <>
-            <h2>Projects</h2>
+            <h2 ref={ ref }>Projects</h2>
             <div className="projects">
                 { projects.map((project, index) => (
                     <div className="item" key={ index }>

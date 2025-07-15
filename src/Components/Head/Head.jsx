@@ -9,9 +9,9 @@ import { FaGithub, FaMapPin } from "react-icons/fa";
 import "./Head.css";
 
 
-const Head = () => {
+const Head = ({ ref }) => {
     return (
-        <div className="head">
+        <div className="head" ref={ ref }>
             <div className="main">
                 <div className="links">
                     <Button
