@@ -2,10 +2,10 @@
 import "./Education.css";
 
 
-const Education = () => {
+const Education = ({ ref }) => {
     return (
         <>
-            <h2>Education</h2>
+            <h2 ref={ ref }>Education</h2>
             <div className="education">
                 <div className="school">
                     <div>

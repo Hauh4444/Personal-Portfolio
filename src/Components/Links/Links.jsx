@@ -10,10 +10,10 @@ import { MdOutlineDescription } from "react-icons/md";
 import "./Links.css";
 
 
-const Links = () => {
+const Links = ({ ref }) => {
     return (
         <>
-            <h2>Links</h2>
+            <h2 ref={ ref }>Links</h2>
             <div className="links">
                 <Link
                     className="item"

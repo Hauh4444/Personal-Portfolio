@@ -10,7 +10,7 @@ import { TbBrandMysql } from "react-icons/tb";
 import "./Skills.css";
 
 
-const Skills = () => {
+const Skills = ({ ref }) => {
     const skills = [
         { icon: <FaJava />, title: "Java" },
         { icon: <IoLogoJavascript />, title: "JavaScript" },
@@ -39,7 +39,7 @@ const Skills = () => {
 
     return (
         <>
-            <h2>Skills</h2>
+            <h2 ref={ ref }>Skills</h2>
             <div className="skills">
                 { skills.map((item, index) => (
                     <div className="item" key={ index }>

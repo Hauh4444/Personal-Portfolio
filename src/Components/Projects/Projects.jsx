@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 // External Icons
 import { FaGithub } from "react-icons/fa";
-import { FaCss3Alt, FaReact, FaSass, FaRust, FaCloud, FaLock, FaJava, FaTools } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaSass, FaRust, FaLock, FaJava, FaTools } from "react-icons/fa";
 import { SiFlask, SiSqlite } from "react-icons/si";
 import { TbBrandMysql } from "react-icons/tb";
 import { DiReact, DiDocker, DiMongodb } from "react-icons/di";
@@ -19,7 +19,7 @@ import jobPortalImage from "@/assets/job_portal.jpg";
 import "./Projects.css";
 
 
-const Projects = () => {
+const Projects = ({ ref }) => {
     const projects = [
         {
             title: "Auction House/E-commerce System",
@@ -50,7 +50,6 @@ const Projects = () => {
                 { icon: <FaReact />, title: "React Native" },
                 { icon: <DiReact />, title: "Expo" },
                 { icon: <IoIosPeople />, title: "Context API" },
-                { icon: <FaCloud />, title: "REST API" },
                 { icon: <FaLock />, title: "Secure Storage" },
             ],
             repository: "https://github.com/Hauh4444/Job-Portal-App",
@@ -71,7 +70,7 @@ const Projects = () => {
 
     return (
         <>
-            <h2>Projects</h2>
+            <h2 ref={ ref }>Projects</h2>
             <div className="projects">
                 { projects.map((project, index) => (
                     <div className="item" key={ index }>

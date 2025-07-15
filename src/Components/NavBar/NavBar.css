@@ -1,0 +1,27 @@
+.navBar {
+    width: 60%;
+    padding: 5px 20% 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 4, 14) 90%);
+    z-index: 99;
+
+    .btn {
+        width: fit-content;
+        padding: 5px 15px;
+        height: 50px;
+        text-transform: none;
+        font-size: 20px;
+        color: #fefffe;
+        transition: 0.5s ease;
+
+        &:hover {
+            background-color: transparent;
+            cursor: pointer;
+            color: #3abeff;
+        }
+    }
+}
