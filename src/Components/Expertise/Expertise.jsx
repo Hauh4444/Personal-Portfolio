@@ -21,8 +21,8 @@ const Expertise = () => {
             const topOffset = firstTop - containerTop + 20;
             const height = lastBottom - firstTop;
 
-            timelineRef.current.style.top = `${topOffset}px`;
-            timelineRef.current.style.height = `${height}px`;
+            timelineRef.current.style.top = `${ topOffset }px`;
+            timelineRef.current.style.height = `${ height }px`;
         }
     }
 
@@ -40,24 +40,30 @@ const Expertise = () => {
     return (
         <>
             <h2>Expertise</h2>
-            <div className="expertise" ref={containerRef}>
-                <div className="timeline" ref={timelineRef} />
+            <div className="expertise" ref={ containerRef }>
+                <div className="timeline" ref={ timelineRef } />
                 <div className="item">
-                    <h3 ref={firstHeadRef}>Software Development</h3>
+                    <h3 ref={ firstHeadRef }>Software Development</h3>
                     <p>
-                        Skilled in Python, Java, and JavaScript with experience in both functional and OOP styles.
+                        Proficient in Python, Java, and JavaScript with experience in both functional and object-oriented programming.
                     </p>
                 </div>
                 <div className="item">
                     <h3>Frontend Development</h3>
                     <p>
-                        Build responsive UIs with React, Vue, HTML, CSS, and SASS. Familiar with APIs and modern tools.
+                        Create responsive UIs using React, Vue, HTML, CSS, and SASS. Experienced with APIs and frontend tools.
                     </p>
                 </div>
                 <div className="item">
-                    <h3 ref={lastHeadRef}>Backend Development</h3>
+                    <h3>Backend Development</h3>
                     <p>
-                        Develop APIs with Flask, Django, Rust, and Node.js. Work with SQL and integrate third-party services.
+                        Build APIs with Flask, Django, Rust, and Node.js. Work with relational databases and external services.
+                    </p>
+                </div>
+                <div className="item">
+                    <h3 ref={ lastHeadRef }>Database Management</h3>
+                    <p>
+                        Experienced with databases and BaaS platforms, including Supabase, MongoDB, PostgreSQL, and MySQL.
                     </p>
                 </div>
             </div>

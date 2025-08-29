@@ -1,3 +1,6 @@
+// External Libraries
+import { useRef } from "react";
+
 // Internal Modules
 import NavBar from "@/Components/NavBar/NavBar.jsx";
 import Head from "@/Components/Head/Head.jsx";
@@ -9,7 +12,6 @@ import Links from "@/Components/Links/Links.jsx";
 
 // Stylesheets
 import "./Main.css";
-import {useRef} from "react";
 
 
 const Main = () => {
@@ -35,8 +37,8 @@ const Main = () => {
             <div className="content">
                 <Skills ref={ aboutRef } />
                 <Expertise />
-                <Projects ref={ projectsRef } />
                 <Education ref={ educationRef } />
+                <Projects ref={ projectsRef } />
                 <Links ref={ linksRef } />
             </div>
         </div>

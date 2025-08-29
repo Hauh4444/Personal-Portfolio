@@ -1,5 +1,6 @@
 .expertise {
-    width: 100%;
+    width: 60%;
+    margin: 0 20%;
     position: relative;
     display: flex;
     flex-direction: column;

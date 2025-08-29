@@ -38,7 +38,7 @@ const Head = ({ ref }) => {
                 <h1>Preston Fox</h1>
                 <h4><FaMapPin />&nbsp;Indiana, Pennsylvania, US</h4>
             </div>
-            <h3>Software Engineer<br />Full Stack Developer</h3>
+            <h3>Full Stack Developer</h3>
         </div>
     )
 }
