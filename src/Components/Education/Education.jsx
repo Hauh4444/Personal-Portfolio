@@ -22,7 +22,7 @@ const Education = ({ ref }) => {
                         <p>Indiana University of Pennsylvania</p>
                     </div>
                     <div className="info">
-                        <p>Aug 2022 - Present</p>
+                        <p>Aug 2022 - December 2025</p>
                         <p>GPA: 3.3</p>
                     </div>
                 </div>

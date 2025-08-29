@@ -2,15 +2,17 @@
 import { Button } from "@mui/material";
 
 // External Icons
-import { FaGithub } from "react-icons/fa";
-import { FaCss3Alt, FaReact, FaSass, FaRust, FaLock, FaJava, FaTools } from "react-icons/fa";
-import { SiFlask, SiSqlite } from "react-icons/si";
+import {
+    FaGithub, FaCss3Alt, FaReact, FaSass, FaRust, FaLock, FaJava, FaTools
+} from "react-icons/fa";
+import { SiFlask, SiSqlite, SiTypescript, SiTailwindcss, SiSupabase, SiPostgresql, SiExpo } from "react-icons/si";
+import { DiDocker, DiMongodb } from "react-icons/di";
 import { TbBrandMysql } from "react-icons/tb";
-import { DiReact, DiDocker, DiMongodb } from "react-icons/di";
-import { IoIosPeople } from "react-icons/io";
+import { FiGlobe } from "react-icons/fi";
 
 // Internal Assets
 import auctionHouseImage from "@/assets/auction_house.png";
+import taskManagementImage from "@/assets/task-management.png";
 import eventManagementImage from "@/assets/event_management.png";
 import jobPortalAppImage from "@/assets/job_portal_app.jpg";
 import jobPortalImage from "@/assets/job_portal.jpg";
@@ -21,6 +23,19 @@ import "./Projects.css";
 
 const Projects = ({ ref }) => {
     const projects = [
+        {
+            title: "Task Management System",
+            background: taskManagementImage,
+            technologies: [
+                { icon: <FaReact />, title: "React" },
+                { icon: <SiTypescript />, title: "TypeScript" },
+                { icon: <SiSupabase />, title: "Supabase" },
+                { icon: <SiPostgresql />, title: "PostgreSQL" },
+                { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+            ],
+            repository: "https://github.com/Hauh4444/task-management",
+            demo: "https://main.dk2nrxxcpt5un.amplifyapp.com/"
+        },
         {
             title: "Auction House/E-commerce System",
             background: auctionHouseImage,
@@ -48,8 +63,8 @@ const Projects = ({ ref }) => {
             background: jobPortalAppImage,
             technologies: [
                 { icon: <FaReact />, title: "React Native" },
-                { icon: <DiReact />, title: "Expo" },
-                { icon: <IoIosPeople />, title: "Context API" },
+                { icon: <SiExpo />, title: "Expo" },
+                { icon: <SiTypescript />, title: "Context API" },
                 { icon: <FaLock />, title: "Secure Storage" },
             ],
             repository: "https://github.com/Hauh4444/Job-Portal-App",
@@ -85,17 +100,32 @@ const Projects = ({ ref }) => {
                                     </div>
                                 )) }
                             </span>
-                            <Button
-                                className="btn"
-                                size="small"
-                                component="a"
-                                href={ project.repository }
-                                title={ project.repository }
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaGithub /> Repository
-                            </Button>
+                            <span className="links">
+                                <Button
+                                    className="btn"
+                                    size="small"
+                                    component="a"
+                                    href={ project.repository }
+                                    title={ project.repository }
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <FaGithub /> Repository
+                                </Button>
+                                { project.demo && (
+                                    <Button
+                                        className="btn"
+                                        size="small"
+                                        component="a"
+                                        href={ project.demo }
+                                        title={ project.demo }
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <FiGlobe /> Live Demo
+                                    </Button>
+                                ) }
+                            </span>
                         </div>
                     </div>
                 )) }
