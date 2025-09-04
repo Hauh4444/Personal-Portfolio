@@ -9,8 +9,8 @@ const NavBar = ({ headRef, aboutRef, projectsRef, educationRef, linksRef }) => {
     const navItems = [
         { title: "Home", ref: headRef },
         { title: "About", ref: aboutRef },
-        { title: "Projects", ref: projectsRef },
         { title: "Education", ref: educationRef },
+        { title: "Projects", ref: projectsRef },
         { title: "Links", ref: linksRef },
     ];
 

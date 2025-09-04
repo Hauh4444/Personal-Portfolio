@@ -27,8 +27,8 @@ const Main = () => {
             <NavBar
                 headRef={ headRef }
                 aboutRef={ aboutRef }
-                projectsRef={ projectsRef }
                 educationRef={ educationRef }
+                projectsRef={ projectsRef }
                 linksRef={ linksRef }
             />
 

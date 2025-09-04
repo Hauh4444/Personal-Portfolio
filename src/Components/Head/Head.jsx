@@ -1,5 +1,5 @@
 // External Libraries
-import { Button } from "@mui/material";
+import {Button, Link} from "@mui/material";
 
 // External Icons
 import { IoMail } from "react-icons/io5";
@@ -7,13 +7,14 @@ import { FaGithub, FaMapPin } from "react-icons/fa";
 
 // Stylesheets
 import "./Head.css";
+import {MdOutlineDescription} from "react-icons/md";
 
 
 const Head = ({ ref }) => {
     return (
         <div className="head" ref={ ref }>
             <div className="main">
-                <div className="links">
+                <div className="head-links">
                     <Button
                         className="btn"
                         size="small"
@@ -33,6 +34,19 @@ const Head = ({ ref }) => {
                         rel="noopener noreferrer"
                     >
                         <FaGithub />
+                    </Button>
+                    <Button
+                        className="btn"
+                    >
+                        <Link
+                            className="item"
+                            href="/resume.pdf"
+                            title="Download Resume"
+                            underline="hover"
+                            download
+                        >
+                            <MdOutlineDescription sx={{ mr: 1 }} />
+                        </Link>
                     </Button>
                 </div>
                 <h1>Preston Fox</h1>

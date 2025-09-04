@@ -11,6 +11,7 @@ import { FiGlobe } from "react-icons/fi";
 
 // Internal Assets
 import auctionHouseImage from "@/assets/auction_house.png";
+import knowledgeHubImage from "@/assets/knowledge_hub.png";
 import taskManagementImage from "@/assets/task-management.png";
 import eventManagementImage from "@/assets/event_management.png";
 import jobPortalImage from "@/assets/job_portal.jpg";
@@ -20,6 +21,19 @@ import "./Projects.css";
 
 
 const projects = [
+    {
+        title: "Knowledge Hub",
+        background: knowledgeHubImage,
+        technologies: [
+            { icon: <FaReact />, title: "React" },
+            { icon: <SiTypescript />, title: "TypeScript" },
+            { icon: <SiSupabase />, title: "Supabase" },
+            { icon: <SiPostgresql />, title: "PostgreSQL" },
+            { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+        ],
+        repository: "https://github.com/Hauh4444/knowledge-hub",
+        demo: "https://main.dqmj7t8wgu1v0.amplifyapp.com/"
+    },
     {
         title: "Task Management System",
         background: taskManagementImage,
