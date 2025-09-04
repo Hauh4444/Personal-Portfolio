@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@mui/material";
 
 // External Icons
-import { FaGithub, FaCss3Alt, FaReact, FaSass, FaRust, FaLock, FaJava, FaTools, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaGithub, FaCss3Alt, FaReact, FaSass, FaRust, FaJava, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { SiFlask, SiSqlite, SiTypescript, SiTailwindcss, SiSupabase, SiPostgresql, SiExpo } from "react-icons/si";
 import { DiDocker, DiMongodb } from "react-icons/di";
 import { TbBrandMysql } from "react-icons/tb";
@@ -13,7 +13,6 @@ import { FiGlobe } from "react-icons/fi";
 import auctionHouseImage from "@/assets/auction_house.png";
 import taskManagementImage from "@/assets/task-management.png";
 import eventManagementImage from "@/assets/event_management.png";
-import jobPortalAppImage from "@/assets/job_portal_app.jpg";
 import jobPortalImage from "@/assets/job_portal.jpg";
 
 // Stylesheets
@@ -57,22 +56,12 @@ const projects = [
         repository: "https://github.com/Hauh4444/Event-Management",
     },
     {
-        title: "Job Portal Application",
-        background: jobPortalAppImage,
+        title: "Job Portal Mobile Application",
+        background: jobPortalImage,
         technologies: [
             { icon: <FaReact />, title: "React Native" },
             { icon: <SiExpo />, title: "Expo" },
-            { icon: <SiTypescript />, title: "Context API" },
-            { icon: <FaLock />, title: "Secure Storage" },
-        ],
-        repository: "https://github.com/Hauh4444/Job-Portal-App",
-    },
-    {
-        title: "Job Portal API",
-        background: jobPortalImage,
-        technologies: [
             { icon: <FaJava />, title: "Java" },
-            { icon: <FaTools />, title: "Java CLI" },
             { icon: <DiMongodb />, title: "MongoDB" },
             { icon: <DiDocker />, title: "Docker" },
         ],
