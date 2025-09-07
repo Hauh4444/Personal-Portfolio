@@ -1,24 +1,12 @@
 .head {
     width: 100%;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background: url("@/assets/background.jpg");
     background-size: cover;
-
-    &::after {
-        width: 100%;
-        height: 25%;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(to bottom, transparent 0%, rgb(0, 4, 14) 100%);
-        backdrop-filter: blur(2px);
-        pointer-events: none;
-        content: "";
-    }
 
     .main {
         display: flex;
@@ -36,20 +24,13 @@
                 min-width: 45px;
                 height: 45px;
                 border: 1px solid rgba(254, 255, 254, 0.5);
-                border-radius: 5px;
+                border-radius: 10px;
                 text-transform: none;
-                font-size: 24px;
-                color: #fefffe;
                 transition: 0.5s ease;
 
                 &:hover {
                     border: 1px solid rgba(58, 190, 255, 0.5);
                     cursor: pointer;
-                    color: #3abeff;
-
-                    .item {
-                        color: #3abeff;
-                    }
                 }
 
                 .item {
@@ -59,7 +40,6 @@
                     justify-content: flex-start;
                     align-items: center;
                     gap: 8px;
-                    color: #fefffe;
                     transition: 0.5s ease;
                 }
             }
@@ -85,5 +65,39 @@
     h3 {
         line-height: 60px;
         font-size: 32px;
+    }
+}
+
+@media (min-width: 1451px) {
+    .head {
+        &::after {
+            width: 100%;
+            height: 25%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(to bottom, transparent 0%, rgb(0, 4, 14) 100%);
+            backdrop-filter: blur(2px);
+            pointer-events: none;
+            content: "";
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .head {
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 10vh !important;
+
+        .head-links {
+            justify-content: center !important;
+        }
+
+        h1,
+        h3,
+        h4 {
+            text-align: center;
+        }
     }
 }

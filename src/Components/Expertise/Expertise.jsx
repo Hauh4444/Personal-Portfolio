@@ -38,10 +38,10 @@ const Expertise = () => {
 
 
     return (
-        <>
+        <div className="expertise" ref={ containerRef }>
             <h2>Expertise</h2>
-            <div className="expertise" ref={ containerRef }>
-                <div className="timeline" ref={ timelineRef } />
+            <div className="timeline" ref={ timelineRef } />
+            <div className="items">
                 <div className="item">
                     <h3 ref={ firstHeadRef }>Software Development</h3>
                     <p>
@@ -67,7 +67,7 @@ const Expertise = () => {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

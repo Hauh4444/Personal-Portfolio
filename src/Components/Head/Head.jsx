@@ -1,18 +1,16 @@
 // External Libraries
 import {Button, Link} from "@mui/material";
 
-// External Icons
-import { IoMail } from "react-icons/io5";
-import { FaGithub, FaMapPin } from "react-icons/fa";
+// Internal Assets
+import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
 
 // Stylesheets
 import "./Head.css";
-import {MdOutlineDescription} from "react-icons/md";
 
 
-const Head = ({ ref }) => {
+const Head = () => {
     return (
-        <div className="head" ref={ ref }>
+        <div className="head">
             <div className="main">
                 <div className="head-links">
                     <Button
@@ -22,7 +20,7 @@ const Head = ({ ref }) => {
                         href="mailto:prestonefox4444@gmail.com"
                         title="prestonefox4444@gmail.com"
                     >
-                        <IoMail />
+                        <CustomIcon size={ 25 } icon="email" />
                     </Button>
                     <Button
                         className="btn"
@@ -33,7 +31,7 @@ const Head = ({ ref }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaGithub />
+                        <CustomIcon size={ 25 } icon="github" />
                     </Button>
                     <Button
                         className="btn"
@@ -45,14 +43,14 @@ const Head = ({ ref }) => {
                             underline="hover"
                             download
                         >
-                            <MdOutlineDescription sx={{ mr: 1 }} />
+                            <CustomIcon size={ 25 } icon="resume" />
                         </Link>
                     </Button>
                 </div>
                 <h1>Preston Fox</h1>
-                <h4><FaMapPin />&nbsp;Indiana, Pennsylvania, US</h4>
+                <h4><CustomIcon size={ 30 } icon="location" />&nbsp;Indiana, Pennsylvania, US</h4>
             </div>
-            <h3>Full Stack Developer</h3>
+            <h3>Software Engineer &<br />Full Stack Developer</h3>
         </div>
     )
 }

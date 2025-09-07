@@ -1,62 +1,68 @@
-// External Icons
-import {
-    FaJava, FaHtml5, FaCss3Alt, FaSass, FaPhp, FaRust, FaPython, FaDatabase,
-    FaReact, FaVuejs, FaNodeJs, FaGitAlt, FaGithub
-} from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import {
-    SiTypescript, SiVite, SiFlask, SiDjango, SiSqlite,
-    SiTailwindcss, SiPostgresql, SiSupabase
-} from "react-icons/si";
-import { DiDocker, DiMongodb } from "react-icons/di";
-import { TbBrandMysql } from "react-icons/tb";
+// Internal Assets
+import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
 
 // Stylesheets
 import "./Skills.css";
 
 
-const skills = [
-    { icon: <IoLogoJavascript />, title: "JavaScript" },
-    { icon: <SiTypescript />, title: "TypeScript" },
-    { icon: <FaPython />, title: "Python" },
-    { icon: <FaRust />, title: "Rust" },
-    { icon: <FaJava />, title: "Java" },
-    { icon: <FaHtml5 />, title: "HTML" },
-    { icon: <FaCss3Alt />, title: "CSS" },
-    { icon: <FaSass />, title: "SASS" },
-    { icon: <FaDatabase />, title: "SQL" },
-    { icon: <FaPhp />, title: "PHP" },
-    { icon: <FaReact />, title: "React" },
-    { icon: <FaReact />, title: "React Native" },
-    { icon: <FaVuejs />, title: "Vue" },
-    { icon: <SiVite />, title: "Vite" },
-    { icon: <FaNodeJs />, title: "Node.js" },
-    { icon: <SiFlask />, title: "Flask" },
-    { icon: <SiDjango />, title: "Django" },
-    { icon: <SiTailwindcss />, title: "Tailwind CSS" },
-    { icon: <SiSupabase />, title: "Supabase" },
-    { icon: <TbBrandMysql />, title: "MySQL" },
-    { icon: <SiSqlite />, title: "SQLite" },
-    { icon: <SiPostgresql />, title: "PostgreSQL" },
-    { icon: <DiMongodb />, title: "MongoDB" },
-    { icon: <DiDocker />, title: "Docker" },
-    { icon: <FaGitAlt />, title: "Git" },
-    { icon: <FaGithub />, title: "GitHub" },
-]
+const languages = [
+    { icon: <CustomIcon icon="javascript" />, title: "JavaScript" },
+    { icon: <CustomIcon icon="typescript" />, title: "TypeScript" },
+    { icon: <CustomIcon icon="python" />, title: "Python" },
+    { icon: <CustomIcon icon="java" />, title: "Java" },
+    { icon: <CustomIcon icon="rust" />, title: "Rust" },
+    { icon: <CustomIcon icon="html5" />, title: "HTML" },
+    { icon: <CustomIcon icon="css3" />, title: "CSS" },
+    { icon: <CustomIcon icon="sass" />, title: "SASS" },
+];
+
+const frameworks = [
+    { icon: <CustomIcon icon="react" />, title: "React" },
+    { icon: <CustomIcon icon="react" />, title: "React Native" },
+    { icon: <CustomIcon icon="vue" />, title: "Vue" },
+    { icon: <CustomIcon icon="nodejs" />, title: "Node.js" },
+    { icon: <CustomIcon icon="flask" />, title: "Flask" },
+    { icon: <CustomIcon icon="django" />, title: "Django" },
+    { icon: <CustomIcon icon="tailwindcss" />, title: "Tailwind CSS" },
+];
+
+const databases = [
+    { icon: <CustomIcon icon="supabase" />, title: "Supabase" },
+    { icon: <CustomIcon icon="mysql" />, title: "MySQL" },
+    { icon: <CustomIcon icon="postgresql" />, title: "PostgreSQL" },
+    { icon: <CustomIcon icon="mongodb" />, title: "MongoDB" },
+    { icon: <CustomIcon icon="docker" />, title: "Docker" },
+    { icon: <CustomIcon icon="git" />, title: "Git" },
+    { icon: <CustomIcon icon="github" />, title: "GitHub" },
+];
 
 
-const Skills = ({ ref }) => {
+const Skills = () => {
     return (
-        <>
-            <h2 ref={ ref }>Skills</h2>
-            <div className="skills">
-                { skills.map((item, index) => (
+        <div className="skills">
+            <h2>Skills</h2>
+            <div className="items">
+                { languages.map((item, index) => (
                     <div className="item" key={ index }>
                         { item.icon } { item.title }
                     </div>
                 )) }
             </div>
-        </>
+            <div className="items">
+                { frameworks.map((item, index) => (
+                    <div className="item" key={ index }>
+                        { item.icon } { item.title }
+                    </div>
+                )) }
+            </div>
+            <div className="items">
+                { databases.map((item, index) => (
+                    <div className="item" key={ index }>
+                        { item.icon } { item.title }
+                    </div>
+                )) }
+            </div>
+        </div>
     )
 }
 

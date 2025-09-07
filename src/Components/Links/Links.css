@@ -1,5 +1,5 @@
 .links {
-    margin: 0 20%;
+    margin: 0 15%;
 
     .item {
         margin: 10px 0;
@@ -10,5 +10,18 @@
         gap: 8px;
         font-size: 20px;
         color: #3abeff;
+    }
+}
+
+@media (max-width: 1450px) {
+    .links {
+        .item {
+            font-size: 15px !important;
+
+            svg {
+                width: 20px !important;
+                height: 20px !important;
+            }
+        }
     }
 }

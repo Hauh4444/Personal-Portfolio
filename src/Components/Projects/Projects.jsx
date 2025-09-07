@@ -3,13 +3,10 @@ import { useEffect, useRef, useState } from "react";
 import { Button } from "@mui/material";
 
 // External Icons
-import { FaGithub, FaCss3Alt, FaReact, FaSass, FaRust, FaJava, FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { SiFlask, SiSqlite, SiTypescript, SiTailwindcss, SiSupabase, SiPostgresql, SiExpo } from "react-icons/si";
-import { DiDocker, DiMongodb } from "react-icons/di";
-import { TbBrandMysql } from "react-icons/tb";
-import { FiGlobe } from "react-icons/fi";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 // Internal Assets
+import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
 import auctionHouseImage from "@/assets/auction_house.png";
 import knowledgeHubImage from "@/assets/knowledge_hub.png";
 import taskManagementImage from "@/assets/task-management.png";
@@ -25,47 +22,49 @@ const projects = [
         title: "Knowledge Hub",
         background: knowledgeHubImage,
         technologies: [
-            { icon: <FaReact />, title: "React" },
-            { icon: <SiTypescript />, title: "TypeScript" },
-            { icon: <SiSupabase />, title: "Supabase" },
-            { icon: <SiPostgresql />, title: "PostgreSQL" },
-            { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+            { icon: <CustomIcon size={ 20 } icon="react" />, title: "React" },
+            { icon: <CustomIcon size={ 20 } icon="typescript" />, title: "TypeScript" },
+            { icon: <CustomIcon size={ 20 } icon="supabase" />, title: "Supabase" },
+            { icon: <CustomIcon size={ 20 } icon="postgresql" />, title: "PostgreSQL" },
+            { icon: <CustomIcon size={ 20 } icon="tailwindcss" />, title: "Tailwind CSS" },
         ],
         repository: "https://github.com/Hauh4444/knowledge-hub",
         demo: "https://main.dqmj7t8wgu1v0.amplifyapp.com/"
     },
     {
+        title: "Auction House/E-commerce System",
+        background: auctionHouseImage,
+        technologies: [
+            { icon: <CustomIcon size={ 20 } icon="react" />, title: "React" },
+            { icon: <CustomIcon size={ 20 } icon="javascript" />, title: "JavaScript" },
+            { icon: <CustomIcon size={ 20 } icon="sass" />, title: "SASS" },
+            { icon: <CustomIcon size={ 20 } icon="flask" />, title: "Flask" },
+            { icon: <CustomIcon size={ 20 } icon="mysql" />, title: "MySQL" },
+        ],
+        repository: "https://github.com/Hauh4444/Auction-House",
+    },
+    {
         title: "Task Management System",
         background: taskManagementImage,
         technologies: [
-            { icon: <FaReact />, title: "React" },
-            { icon: <SiTypescript />, title: "TypeScript" },
-            { icon: <SiSupabase />, title: "Supabase" },
-            { icon: <SiPostgresql />, title: "PostgreSQL" },
-            { icon: <SiTailwindcss />, title: "Tailwind CSS" },
+            { icon: <CustomIcon size={ 20 } icon="react" />, title: "React" },
+            { icon: <CustomIcon size={ 20 } icon="typescript" />, title: "TypeScript" },
+            { icon: <CustomIcon size={ 20 } icon="supabase" />, title: "Supabase" },
+            { icon: <CustomIcon size={ 20 } icon="postgresql" />, title: "PostgreSQL" },
+            { icon: <CustomIcon size={ 20 } icon="tailwindcss" />, title: "Tailwind CSS" },
         ],
         repository: "https://github.com/Hauh4444/task-management",
         demo: "https://main.dk2nrxxcpt5un.amplifyapp.com/"
     },
     {
-        title: "Auction House/E-commerce System",
-        background: auctionHouseImage,
-        technologies: [
-            { icon: <FaReact />, title: "React" },
-            { icon: <FaSass />, title: "SASS" },
-            { icon: <SiFlask />, title: "Flask" },
-            { icon: <TbBrandMysql />, title: "MySQL" },
-        ],
-        repository: "https://github.com/Hauh4444/Auction-House",
-    },
-    {
         title: "Event Management System",
         background: eventManagementImage,
         technologies: [
-            { icon: <FaReact />, title: "React" },
-            { icon: <FaCss3Alt />, title: "CSS" },
-            { icon: <FaRust />, title: "Rust" },
-            { icon: <SiSqlite />, title: "SQLite" },
+            { icon: <CustomIcon size={ 20 } icon="react" />, title: "React" },
+            { icon: <CustomIcon size={ 20 } icon="javascript" />, title: "JavaScript" },
+            { icon: <CustomIcon size={ 20 } icon="css3" />, title: "CSS" },
+            { icon: <CustomIcon size={ 20 } icon="rust" />, title: "Rust" },
+            { icon: <CustomIcon size={ 20 } icon="sqlite" />, title: "SQLite" },
         ],
         repository: "https://github.com/Hauh4444/Event-Management",
     },
@@ -73,18 +72,18 @@ const projects = [
         title: "Job Portal Mobile Application",
         background: jobPortalImage,
         technologies: [
-            { icon: <FaReact />, title: "React Native" },
-            { icon: <SiExpo />, title: "Expo" },
-            { icon: <FaJava />, title: "Java" },
-            { icon: <DiMongodb />, title: "MongoDB" },
-            { icon: <DiDocker />, title: "Docker" },
+            { icon: <CustomIcon size={ 20 } icon="react" />, title: "React Native" },
+            { icon: <CustomIcon size={ 20 } icon="javascript" />, title: "JavaScript" },
+            { icon: <CustomIcon size={ 20 } icon="java" />, title: "Java" },
+            { icon: <CustomIcon size={ 20 } icon="mongodb" />, title: "MongoDB" },
+            { icon: <CustomIcon size={ 20 } icon="docker" />, title: "Docker" },
         ],
         repository: "https://github.com/Hauh4444/Job-Portal",
     },
 ]
 
 
-const Projects = ({ ref }) => {
+const Projects = () => {
     const projectsRef = useRef(null);
     const [leftOpacity, setLeftOpacity] = useState(0);
     const [rightOpacity, setRightOpacity] = useState(1);
@@ -135,8 +134,8 @@ const Projects = ({ ref }) => {
     }, []);
 
     return (
-        <>
-            <h2 ref={ ref }>Projects</h2>
+        <div className="projects">
+            <h2>Projects</h2>
             <div className="wrapper">
                 <div className="blur left" />
                 <Button
@@ -147,7 +146,7 @@ const Projects = ({ ref }) => {
                     <FaChevronLeft />
                 </Button>
 
-                <div className="projects" ref={ projectsRef }>
+                <div className="items" ref={ projectsRef }>
                     { projects.map((project, index) => (
                         <div className="item" key={ index }>
                             <img src={ project.background } alt={ project.title } className="project-image" />
@@ -171,7 +170,7 @@ const Projects = ({ ref }) => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        <FaGithub /> Repository
+                                        <CustomIcon size={ 20 } icon="github"/> Repository
                                     </Button>
                                     { project.demo && (
                                         <Button
@@ -183,7 +182,7 @@ const Projects = ({ ref }) => {
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
-                                            <FiGlobe /> Live Demo
+                                            <CustomIcon size={ 20 } icon="globe"/> Live Demo
                                         </Button>
                                     ) }
                                 </span>
@@ -201,7 +200,7 @@ const Projects = ({ ref }) => {
                     <FaChevronRight />
                 </Button>
             </div>
-        </>
+        </div>
     )
 }
 

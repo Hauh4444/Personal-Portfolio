@@ -1,53 +1,49 @@
 // External Libraries
 import { Link } from "@mui/material";
 
-// External Icons
-import { IoMail } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
-import { MdOutlineDescription } from "react-icons/md";
+// Internal Assets
+import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
 
 // Stylesheets
 import "./Links.css";
 
 
-const Links = ({ ref }) => {
+const Links = () => {
     return (
-        <>
-            <h2 ref={ ref }>Links</h2>
-            <div className="links">
-                <Link
-                    className="item"
-                    href="mailto:prestonefox4444@gmail.com"
-                    title="prestonefox4444@gmail.com"
-                    underline="hover"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    <IoMail sx={{ mr: 1 }} />Email Me
-                </Link>
+        <div className="links">
+            <h2>Links</h2>
+            <Link
+                className="item"
+                href="mailto:prestonefox4444@gmail.com"
+                title="prestonefox4444@gmail.com"
+                underline="hover"
+                target="_blank"
+                rel="noopener"
+            >
+                <CustomIcon size={ 20 } icon="email" /> Email Me
+            </Link>
 
-                <Link
-                    className="item"
-                    href="https://github.com/Hauh4444"
-                    title="https://github.com/Hauh4444"
-                    underline="hover"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    <FaGithub sx={{ mr: 1 }} />GitHub
-                </Link>
+            <Link
+                className="item"
+                href="https://github.com/Hauh4444"
+                title="https://github.com/Hauh4444"
+                underline="hover"
+                target="_blank"
+                rel="noopener"
+            >
+                <CustomIcon size={ 20 } icon="github" /> GitHub
+            </Link>
 
-                <Link
-                    className="item"
-                    href="/resume.pdf"
-                    title="Preston's Resume"
-                    underline="hover"
-                    download
-                >
-                    <MdOutlineDescription sx={{ mr: 1 }} />Download Resume
-                </Link>
-            </div>
-        </>
+            <Link
+                className="item"
+                href="/resume.pdf"
+                title="Preston's Resume"
+                underline="hover"
+                download
+            >
+                <CustomIcon size={ 20 } icon="resume" /> Download Resume
+            </Link>
+        </div>
     )
 }
 
