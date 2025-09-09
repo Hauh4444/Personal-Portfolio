@@ -1,6 +1,5 @@
 .expertise {
-    width: 60%;
-    margin: 0 15%;
+    margin: 0 10%;
     position: relative;
 
     .timeline {
@@ -25,7 +24,7 @@
                 width: 12px;
                 height: 12px;
                 position: absolute;
-                top: 13px;
+                top: 10px;
                 left: -26px;
                 background-color: #3abeff;
                 border-radius: 50%;
@@ -49,13 +48,15 @@
 
 @media (max-width: 1450px) {
     .expertise {
-        .item {
-            h3 {
-                font-size: 20px;
-            }
+        .items {
+            .item {
+                h3 {
+                    font-size: 20px;
+                }
 
-            p {
-                font-size: 15px;
+                p {
+                    font-size: 15px;
+                }
             }
         }
     }

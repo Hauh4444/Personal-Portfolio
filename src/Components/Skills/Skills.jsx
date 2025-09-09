@@ -14,6 +14,7 @@ const languages = [
     { icon: <CustomIcon icon="html5" />, title: "HTML" },
     { icon: <CustomIcon icon="css3" />, title: "CSS" },
     { icon: <CustomIcon icon="sass" />, title: "SASS" },
+    { icon: <CustomIcon icon="sql" />, title: "SQL" },
 ];
 
 const frameworks = [

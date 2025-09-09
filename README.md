@@ -11,8 +11,6 @@ Welcome to my personal portfolio! This site serves as a central place to share w
 - Technical Skills Overview
 - Expertise Summaries
 - Projects
-- Education
-- Links
 
 ## Tech Stack
 

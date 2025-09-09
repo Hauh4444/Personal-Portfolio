@@ -45,25 +45,25 @@ const Expertise = () => {
                 <div className="item">
                     <h3 ref={ firstHeadRef }>Software Development</h3>
                     <p>
-                        Proficient in Python, Java, and JavaScript with experience in both functional and object-oriented programming.
+                        Skilled in Python, Java, and JavaScript, with experience in both functional and object-oriented programming.
                     </p>
                 </div>
                 <div className="item">
                     <h3>Frontend Development</h3>
                     <p>
-                        Create responsive UIs using React, Vue, HTML, CSS, and SASS. Experienced with APIs and frontend tools.
+                        Build responsive interfaces using React, Vue, HTML, CSS, and SASS. Experienced in connecting UIs with APIs and frontend tools.
                     </p>
                 </div>
                 <div className="item">
                     <h3>Backend Development</h3>
                     <p>
-                        Build APIs with Flask, Django, Rust, and Node.js. Work with relational databases and external services.
+                        Develop APIs and backend systems with Flask, Django, Rust, and Node.js. Work with relational databases and external services.
                     </p>
                 </div>
                 <div className="item">
                     <h3 ref={ lastHeadRef }>Database Management</h3>
                     <p>
-                        Experienced with databases and BaaS platforms, including Supabase, MongoDB, PostgreSQL, and MySQL.
+                        Experience with Supabase, MongoDB, PostgreSQL, and MySQL, including schema design, queries, and application integration.
                     </p>
                 </div>
             </div>

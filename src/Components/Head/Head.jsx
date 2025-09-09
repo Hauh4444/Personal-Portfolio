@@ -1,5 +1,5 @@
 // External Libraries
-import {Button, Link} from "@mui/material";
+import { Button, Link } from "@mui/material";
 
 // Internal Assets
 import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
@@ -18,7 +18,7 @@ const Head = () => {
                         size="small"
                         component="a"
                         href="mailto:prestonefox4444@gmail.com"
-                        title="prestonefox4444@gmail.com"
+                        title="Email"
                     >
                         <CustomIcon size={ 25 } icon="email" />
                     </Button>
@@ -27,11 +27,22 @@ const Head = () => {
                         size="small"
                         component="a"
                         href="https://github.com/Hauh4444"
-                        title="https://github.com/Hauh4444"
+                        title="GitHub"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <CustomIcon size={ 25 } icon="github" />
+                    </Button>
+                    <Button
+                        className="btn"
+                        size="small"
+                        component="a"
+                        href="https://www.linkedin.com/in/preston-fox-3024a82b8/"
+                        title="LinkedIn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <CustomIcon size={ 25 } icon="linkedin" />
                     </Button>
                     <Button
                         className="btn"
