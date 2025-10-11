@@ -35,7 +35,6 @@ const projects = [
             { icon: <CustomIcon size={ 20 } icon="typescript" />, title: "TypeScript" },
             { icon: <CustomIcon size={ 20 } icon="supabase" />, title: "Supabase" },
             { icon: <CustomIcon size={ 20 } icon="postgresql" />, title: "PostgreSQL" },
-            { icon: <CustomIcon size={ 20 } icon="tailwindcss" />, title: "Tailwind CSS" },
         ],
         repository: "https://github.com/Hauh4444/knowledge-hub",
         demo: "https://www.knowledgehubpro.org/"
@@ -71,7 +70,6 @@ const projects = [
             { icon: <CustomIcon size={ 20 } icon="typescript" />, title: "TypeScript" },
             { icon: <CustomIcon size={ 20 } icon="supabase" />, title: "Supabase" },
             { icon: <CustomIcon size={ 20 } icon="postgresql" />, title: "PostgreSQL" },
-            { icon: <CustomIcon size={ 20 } icon="tailwindcss" />, title: "Tailwind CSS" },
         ],
         repository: "https://github.com/Hauh4444/task-management",
         demo: "https://main.dk2nrxxcpt5un.amplifyapp.com/"
