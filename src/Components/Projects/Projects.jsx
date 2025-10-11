@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 
 // Internal Assets
 import { CustomIcon } from "@/Components/CustomIcon/CustomIcon.jsx";
+import wisReportGeneratorImage from "@/assets/wis_report_generator.png";
 import auctionHouseImage from "@/assets/auction_house.png";
 import knowledgeHubImage from "@/assets/knowledge_hub.png";
 import taskManagementImage from "@/assets/task-management.png";
@@ -14,6 +15,18 @@ import "./Projects.css";
 
 
 const projects = [
+    {
+        title: "WIS Accuracy Report Generator",
+        background: wisReportGeneratorImage,
+        technologies: [
+            { icon: <CustomIcon size={ 20 } icon="python" />, title: "Python" },
+            { icon: <CustomIcon size={ 20 } icon="application" />, title: "PyQT6" },
+            { icon: <CustomIcon size={ 20 } icon="sql" />, title: "SQL" },
+            { icon: <CustomIcon size={ 20 } icon="access" />, title: "Access" },
+            { icon: <CustomIcon size={ 20 } icon="template" />, title: "Jinja2" }
+        ],
+        repository: "https://github.com/Hauh4444/WIS-Accuracy-Data-Analytics"
+    },
     {
         title: "Knowledge Hub",
         background: knowledgeHubImage,
