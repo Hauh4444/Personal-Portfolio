@@ -1,11 +1,15 @@
 .expertise {
-    margin: 0 10%;
+    margin: 3rem 10% 0;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(0, 4, 14, 0.5);
+    border: 1px solid rgba(58, 190, 255, 0.3);
     position: relative;
 }
 
 .expertise .timeline {
     position: absolute;
-    left: 11px;
+    left: 43.5px;
     width: 2px;
     background-color: rgba(58, 190, 255, 0.5);
     z-index: 0;
@@ -58,6 +62,11 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
+    .expertise {
+        margin: 3rem 5% 0;
+        padding: 2rem;
+    }
+
     .expertise .items .item h3 {
         font-size: 22px;
     }
@@ -70,7 +79,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .expertise {
-        margin: 0 5%;
+        margin: 3rem 5% 0;
+        padding: 1.5rem;
     }
 
     .expertise .items .item h3 {

@@ -1,5 +1,9 @@
 .skills {
-    margin: 10px 10%;
+    margin: 3rem 10% 0;
+    padding: 2rem;
+    border-radius: 10px;
+    background: rgba(0, 4, 14, 0.5);
+    border: 1px solid rgba(58, 190, 255, 0.3);
 }
 
 .skills .items {
@@ -42,6 +46,11 @@
 
 /* Tablet */
 @media (max-width: 1024px) {
+    .skills {
+        margin: 3rem 5% 0;
+        padding: 2rem;
+    }
+
     .skills .items .item {
         min-width: 10%;
         max-width: 22%;
@@ -52,7 +61,8 @@
 /* Mobile */
 @media (max-width: 768px) {
     .skills {
-        margin: 10px 5%;
+        margin: 3rem 5% 0;
+        padding: 1.5rem;
     }
 
     .skills .items .item {

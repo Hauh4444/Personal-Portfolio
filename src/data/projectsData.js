@@ -94,7 +94,7 @@ export const projectsData = [
             },
             {
                 title: "Comprehensive Testing",
-                description: "Implemented 98+ test cases covering all functionality to ensure reliability in a production environment where accuracy is critical."
+                description: "Implemented 67+ test cases covering all functionality to ensure reliability in a production environment where accuracy is critical."
             }
         ],
         challenges: [
@@ -108,7 +108,7 @@ export const projectsData = [
             },
             {
                 challenge: "Ensuring production reliability with limited testing environment",
-                solution: "Developed 98+ comprehensive test cases with mocked database connections to ensure bulletproof reliability before deploying to real operational use."
+                solution: "Developed 67+ comprehensive test cases with mocked database connections to ensure bulletproof reliability before deploying to real operational use."
             }
         ],
         tags: ["Python", "PyQt6", "Desktop Application", "SQL", "Data Analytics", "Problem Solving", "Production Software", "Business Intelligence", "Windows"]

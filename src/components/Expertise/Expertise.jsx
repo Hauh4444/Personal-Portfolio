@@ -39,8 +39,7 @@ const Expertise = () => {
         const firstTop = firstHeadRef.current.getBoundingClientRect().top;
         const lastBottom = lastHeadRef.current.getBoundingClientRect().top;
 
-        // Position timeline to span from first to last expertise item
-        const topOffset = firstTop - containerTop + 20;
+        const topOffset = firstTop - containerTop + 15;
         const height = lastBottom - firstTop;
 
         timelineRef.current.style.top = `${topOffset}px`;
