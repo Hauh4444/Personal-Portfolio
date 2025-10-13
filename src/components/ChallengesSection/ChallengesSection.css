@@ -1,0 +1,34 @@
+.challenge-item {
+    padding: 1.5rem;
+    background: rgba(0, 4, 14, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(58, 190, 255, 0.3);
+    border-left: 4px solid #3abeff;
+    margin-bottom: 1.5rem;
+    transition: 0.5s ease;
+}
+
+.challenge-item:hover {
+    background: rgba(58, 190, 255, 0.1);
+    border-color: rgba(58, 190, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.challenge-item:last-child {
+    margin-bottom: 0;
+}
+
+.challenge-item h4 {
+    color: #fefffe;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.challenge-item p {
+    color: #fefffe;
+    opacity: 0.8;
+    margin: 0;
+}
+

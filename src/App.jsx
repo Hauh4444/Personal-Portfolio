@@ -1,15 +1,10 @@
-// Internal Modules
-import PublicRoutes from "@/Routes/PublicRoutes.jsx";
-
-// Stylesheets
+import PublicRoutes from "@/routes/PublicRoutes.jsx";
 import "./App.css";
 
 
 const App = () => {
-    return (
-        <PublicRoutes />
-    );
-}
+    return <PublicRoutes />;
+};
 
 
-export default App
+export default App;

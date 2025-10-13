@@ -1,0 +1,51 @@
+.tech-categories {
+    display: grid;
+    gap: 2rem;
+}
+
+.tech-category h4 {
+    color: #3abeff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.tech-items {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.tech-item-detail {
+    padding: 1.5rem;
+    background: rgba(0, 4, 14, 0.3);
+    border-radius: 10px;
+    border: 1px solid rgba(58, 190, 255, 0.3);
+    transition: 0.5s ease;
+}
+
+.tech-item-detail:hover {
+    background: rgba(58, 190, 255, 0.1);
+    border-color: rgba(58, 190, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.tech-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fefffe;
+}
+
+.tech-description {
+    color: #fefffe;
+    opacity: 0.8;
+    margin: 0;
+    font-size: 0.95rem;
+}
+

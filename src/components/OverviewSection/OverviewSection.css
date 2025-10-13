@@ -1,0 +1,20 @@
+.overview-text {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.context-box {
+    background: rgba(58, 190, 255, 0.1);
+    border-left: 4px solid #3abeff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1.5rem;
+}
+
+.context-box h4 {
+    color: #3abeff;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
