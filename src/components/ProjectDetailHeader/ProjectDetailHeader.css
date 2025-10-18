@@ -1,3 +1,4 @@
+/* Sticky navigation header with glassmorphism effect */
 .project-detail-header {
     position: sticky;
     top: 0;
@@ -21,6 +22,7 @@
     flex: 1;
 }
 
+/* Project title with text truncation for long names */
 .project-title-nav {
     margin: 0;
     font-size: 1.5rem;
@@ -49,13 +51,13 @@
     box-shadow: none !important;
 }
 
+/* Hover effect without movement for navigation button */
 .back-button:hover {
     border: 1px solid rgba(58, 190, 255, 0.5) !important;
     color: #3abeff !important;
     background: rgba(58, 190, 255, 0.1) !important;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .project-detail-header {
         padding: 1.5rem 5%;
@@ -66,7 +68,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .project-detail-header {
         padding: 1rem 5%;

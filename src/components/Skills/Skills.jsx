@@ -1,7 +1,7 @@
 import { CustomIcon } from "@/components/CustomIcon/CustomIcon.jsx";
 import "./Skills.css";
 
-
+// Skills organized by category for maintainable structure
 const LANGUAGES = [
     { icon: "javascript", title: "JavaScript" },
     { icon: "typescript", title: "TypeScript" },
@@ -33,7 +33,6 @@ const TOOLS = [
     { icon: "git", title: "Git" },
     { icon: "github", title: "GitHub" },
 ];
-
 
 const Skills = () => {
     const renderSkillItems = (items) => (

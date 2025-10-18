@@ -22,7 +22,7 @@ export const projectsData = [
             },
             {
                 title: "Team Statistics by Zone/Department",
-                description: "Delivers comprehensive zone-based analytics showing team performance across different warehouse areas, enabling targeted improvements and resource allocation."
+                description: "Delivers comprehensive zone-based analytics showing team performance across different zones, enabling targeted improvements."
             },
             {
                 title: "Service Miscount Visibility",
@@ -69,7 +69,7 @@ export const projectsData = [
                     {
                         name: "Access",
                         icon: "access",
-                        description: "Source database system containing warehouse inventory data, accessed through ODBC connections."
+                        description: "Source database system containing inventory data, accessed through ODBC connections."
                     },
                     {
                         name: "SQL",

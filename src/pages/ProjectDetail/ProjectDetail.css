@@ -10,7 +10,7 @@
     padding: 0 2rem 4rem;
 }
 
-/* Shared Detail Section Styles */
+/* Shared section styling for consistent card appearance */
 .detail-section {
     margin-bottom: 3rem;
     padding: 2.5rem;
@@ -28,6 +28,7 @@
     padding-bottom: 0.75rem;
 }
 
+/* Brand accent line consistent with main page */
 .detail-section h2::after {
     content: '';
     position: absolute;
@@ -44,7 +45,6 @@
     line-height: 1.8;
 }
 
-/* Not Found */
 .not-found {
     display: flex;
     flex-direction: column;
@@ -55,11 +55,11 @@
 }
 
 .not-found h2 {
+    margin-top: 0;
     font-size: 2rem;
     color: #fefffe;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .project-detail-content {
         padding: 0 1.5rem 3rem;
@@ -70,11 +70,11 @@
     }
 
     .detail-section h2 {
+        margin-top: 0;
         font-size: 1.75rem;
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .project-detail-content {
         padding: 0 1rem 2rem;
@@ -85,6 +85,7 @@
     }
 
     .detail-section h2 {
+        margin-top: 0;
         font-size: 1.5rem;
     }
 }

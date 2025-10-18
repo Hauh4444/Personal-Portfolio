@@ -2,13 +2,12 @@ import { Button, Link } from "@mui/material";
 import { CustomIcon } from "@/components/CustomIcon/CustomIcon.jsx";
 import "./Head.css";
 
-
+// Contact links configuration for easy maintenance
 const CONTACT_LINKS = [
     { icon: "email", href: "mailto:prestonefox4444@gmail.com", title: "Email" },
     { icon: "github", href: "https://github.com/Hauh4444", title: "GitHub", external: true },
     { icon: "linkedin", href: "https://www.linkedin.com/in/preston-fox-3024a82b8/", title: "LinkedIn", external: true },
 ];
-
 
 const Head = () => {
     return (

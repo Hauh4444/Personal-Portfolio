@@ -1,3 +1,4 @@
+/* Consistent card styling matching project detail page */
 .projects {
     margin: 3rem 10% 0;
     padding: 2rem;
@@ -31,6 +32,7 @@
     transition: 0.5s ease;
 }
 
+/* Gradient overlay for text readability and smooth reveal animation */
 .projects .items .item .overlay {
     width: 100%;
     height: calc(100% + 41px);
@@ -126,7 +128,7 @@
     transform: translateY(-2px);
 }
 
-/* Desktop hover effects */
+/* Desktop hover effects - only on screens larger than 1024px */
 @media (min-width: 1025px) {
     .projects .items .item:hover img {
         transform: translateY(-50%) scale(1.2);
@@ -145,7 +147,7 @@
     }
 }
 
-/* Tablet */
+/* Always show buttons on tablet and mobile for touch accessibility */
 @media (max-width: 1024px) {
     .projects {
         margin: 3rem 5% 0;
@@ -157,36 +159,7 @@
     }
 
     .projects .items .item {
-        height: 280px;
-    }
-
-    .projects .items .item .itemContent h3 {
-        font-size: 22px;
-    }
-
-    .projects .items .item .itemContent span .technology {
-        font-size: 16px;
-    }
-
-    .projects .items .item .itemContent .links .btn {
-        font-size: 16px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .projects {
-        margin: 3rem 5% 0;
-        padding: 1.5rem;
-    }
-
-    .projects .items {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .projects .items .item {
-        height: 250px;
+        height: 240px;
     }
 
     .projects .items .item .overlay {
@@ -201,25 +174,95 @@
         font-size: 20px;
     }
 
-    .projects .items .item .itemContent span .technology {
-        font-size: 15px;
-    }
-
-    .projects .items .item .itemContent span .technology svg {
-        width: 20px;
-        height: 20px;
-    }
-
     .projects .items .item .itemContent .links {
         opacity: 1;
     }
 
+    /* Icon-only layout for better space utilization */
+    .projects .items .item .itemContent span .technology {
+        font-size: 0 !important;
+        justify-content: center;
+        width: 45px !important;
+        height: 45px !important;
+        min-width: 45px !important;
+        max-width: 45px !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        box-sizing: content-box;
+        line-height: 45px;
+    }
+
+    .projects .items .item .itemContent span .technology svg {
+        width: 22px;
+        height: 22px;
+        font-size: 16px;
+    }
+
     .projects .items .item .itemContent .links .btn {
+        font-size: 0 !important;
+        justify-content: center;
+        width: 45px !important;
+        height: 45px !important;
+        min-width: 45px !important;
+        max-width: 45px !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        box-sizing: content-box;
+        line-height: 45px;
+    }
+
+    .projects .items .item .itemContent .links .btn svg {
+        width: 22px;
+        height: 22px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile - Compact layout with smaller dimensions */
+@media (max-width: 768px) {
+    .projects {
+        margin: 3rem 5% 0;
+        padding: 1.5rem;
+    }
+
+    .projects .items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .projects .items .item {
+        height: 200px;
+    }
+
+    .projects .items .item .itemContent h3 {
+        font-size: 18px;
+    }
+
+    .projects .items .item .itemContent span .technology {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+        max-width: 36px !important;
+        line-height: 36px;
+    }
+
+    .projects .items .item .itemContent span .technology svg {
+        width: 18px;
+        height: 18px;
         font-size: 15px;
+    }
+
+    .projects .items .item .itemContent .links .btn {
+        width: 36px !important;
+        height: 36px !important;
+        min-width: 36px !important;
+        max-width: 36px !important;
+        line-height: 36px;
     }
 
     .projects .items .item .itemContent .links .btn svg {
         width: 18px;
         height: 18px;
+        font-size: 15px;
     }
 }

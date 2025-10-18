@@ -5,6 +5,7 @@
     gap: 1.5rem;
 }
 
+/* Feature cards with consistent hover effects */
 .feature-item {
     padding: 1.5rem;
     background: rgba(0, 4, 14, 0.3);
@@ -20,6 +21,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Checkmark icon for feature indicators */
 .feature-icon {
     flex-shrink: 0;
     width: 24px;

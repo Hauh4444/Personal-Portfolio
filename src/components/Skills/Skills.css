@@ -1,3 +1,4 @@
+/* Consistent card styling matching project detail page */
 .skills {
     margin: 3rem 10% 0;
     padding: 2rem;
@@ -44,7 +45,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Tablet */
+/* Icon-only layout for better space utilization */
 @media (max-width: 1024px) {
     .skills {
         margin: 3rem 5% 0;
@@ -56,9 +57,23 @@
         max-width: 22%;
         font-size: 18px;
     }
+
+    .skills .items .item {
+        font-size: 0;
+        justify-content: center;
+        height: 40px;
+        min-width: 40px;
+        gap: 0;
+        flex: 1;
+    }
+
+    .skills .items .item svg {
+        width: 22px;
+        height: 22px;
+        font-size: 18px;
+    }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .skills {
         margin: 3rem 5% 0;
@@ -66,14 +81,14 @@
     }
 
     .skills .items .item {
-        min-width: 5%;
-        max-width: 30%;
-        padding: 6px;
-        font-size: 16px;
+        padding: 4px;
+        height: 32px;
+        min-width: 32px;
     }
 
     .skills .items .item svg {
         width: 18px;
         height: 18px;
+        font-size: 16px;
     }
 }

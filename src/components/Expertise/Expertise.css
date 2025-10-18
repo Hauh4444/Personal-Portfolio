@@ -1,3 +1,4 @@
+/* Consistent card styling matching project detail page */
 .expertise {
     margin: 3rem 10% 0;
     padding: 2rem;
@@ -7,6 +8,7 @@
     position: relative;
 }
 
+/* Timeline line connecting experience dots */
 .expertise .timeline {
     position: absolute;
     left: 43.5px;
@@ -27,6 +29,7 @@
     position: relative;
 }
 
+/* Experience timeline dots */
 .expertise .items .item::before {
     width: 12px;
     height: 12px;
@@ -43,6 +46,7 @@
     transition: 0.5s ease;
 }
 
+/* Subtle hover effect without background change */
 .expertise .items .item:hover h3,
 .expertise .items .item:hover p {
     transform: translateX(5px);
@@ -60,7 +64,6 @@
     font-size: 18px;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .expertise {
         margin: 3rem 5% 0;
@@ -76,7 +79,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .expertise {
         margin: 3rem 5% 0;

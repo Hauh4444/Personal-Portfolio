@@ -1,3 +1,4 @@
+/* Full viewport hero section with background image */
 .head {
     height: 100svh;
     padding: 0 10%;
@@ -9,6 +10,7 @@
     background-size: cover;
 }
 
+/* Gradient overlay for smooth transition to main content */
 .head::after {
     width: 100%;
     height: 25%;
@@ -44,6 +46,7 @@
     transition: 0.5s ease;
 }
 
+/* Consistent hover effects across all interactive elements */
 .head .main .head-links .btn:hover {
     border: 1px solid rgba(58, 190, 255, 0.5);
     cursor: pointer;
@@ -83,7 +86,6 @@
     font-size: 32px;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
     .head {
         padding: 0 5%;
@@ -103,7 +105,6 @@
     }
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .head {
         flex-direction: column !important;

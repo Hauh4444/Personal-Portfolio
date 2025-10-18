@@ -3,6 +3,7 @@
     margin-bottom: 1.5rem;
 }
 
+/* Highlighted context box for project background */
 .context-box {
     background: rgba(58, 190, 255, 0.1);
     border-left: 4px solid #3abeff;
