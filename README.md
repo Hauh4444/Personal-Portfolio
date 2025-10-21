@@ -6,11 +6,23 @@ Welcome to my personal portfolio! This site serves as a central place to share w
 
 [View Portfolio](https://www.prestonefox.com/)
 
-## What’s Inside
+## What's Inside
 
 - Technical Skills Overview
 - Expertise Summaries
 - Projects
+
+## Featured Projects
+
+- **WIS Accuracy Report Generator** - Windows desktop application for inventory analytics
+- **Knowledge Hub** - Full-stack collaborative knowledge platform
+- **Multi-Agent AI System** - Sophisticated multi-agent AI system with Flask and WebSocket communication
+- **Auction House/E-commerce System** - Full-stack e-commerce platform with Scrum methodology
+- **Job Portal Mobile App** - React Native mobile application with Java backend
+- **Task Management System** - Full-stack task management with real-time sync
+- **Event Management System** - Rust backend with React frontend
+
+*Click "Read More" on any project to view detailed information, technical stack, challenges, and more.*
 
 ## Tech Stack
 
