@@ -2,7 +2,6 @@ import { Button, Link } from "@mui/material";
 import { CustomIcon } from "@/components/CustomIcon/CustomIcon.jsx";
 import "./Head.css";
 
-// Contact links configuration for easy maintenance
 const CONTACT_LINKS = [
     { icon: "email", href: "mailto:prestonefox4444@gmail.com", title: "Email" },
     { icon: "github", href: "https://github.com/Hauh4444", title: "GitHub", external: true },

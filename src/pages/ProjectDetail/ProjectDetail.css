@@ -10,7 +10,6 @@
     padding: 0 2rem 4rem;
 }
 
-/* Shared section styling for consistent card appearance */
 .detail-section {
     margin-bottom: 3rem;
     padding: 2.5rem;
@@ -28,7 +27,6 @@
     padding-bottom: 0.75rem;
 }
 
-/* Brand accent line consistent with main page */
 .detail-section h2::after {
     content: '';
     position: absolute;

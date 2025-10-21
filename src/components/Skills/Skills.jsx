@@ -1,8 +1,7 @@
 import { CustomIcon } from "@/components/CustomIcon/CustomIcon.jsx";
 import "./Skills.css";
 
-// Skills organized by category for maintainable structure
-const LANGUAGES = [
+const SKILLS = [
     { icon: "javascript", title: "JavaScript" },
     { icon: "typescript", title: "TypeScript" },
     { icon: "python", title: "Python" },
@@ -12,9 +11,6 @@ const LANGUAGES = [
     { icon: "css3", title: "CSS" },
     { icon: "sass", title: "SASS" },
     { icon: "sql", title: "SQL" },
-];
-
-const FRAMEWORKS = [
     { icon: "react", title: "React" },
     { icon: "react", title: "React Native" },
     { icon: "vue", title: "Vue" },
@@ -22,9 +18,6 @@ const FRAMEWORKS = [
     { icon: "flask", title: "Flask" },
     { icon: "django", title: "Django" },
     { icon: "tailwindcss", title: "Tailwind CSS" },
-];
-
-const TOOLS = [
     { icon: "supabase", title: "Supabase" },
     { icon: "mysql", title: "MySQL" },
     { icon: "postgresql", title: "PostgreSQL" },
@@ -48,9 +41,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <h2>Skills</h2>
-            {renderSkillItems(LANGUAGES)}
-            {renderSkillItems(FRAMEWORKS)}
-            {renderSkillItems(TOOLS)}
+            {renderSkillItems(SKILLS)}
         </div>
     );
 };
