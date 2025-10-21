@@ -5,6 +5,7 @@ import knowledgeHubImage from "@/assets/knowledge_hub.png";
 import taskManagementImage from "@/assets/task-management.png";
 import eventManagementImage from "@/assets/event_management.png";
 import jobPortalImage from "@/assets/job_portal.jpg";
+import multiAgentSystemImage from "@/assets/multi-agent-system.png";
 
 export const projectsData = [
     {
@@ -94,7 +95,7 @@ export const projectsData = [
             },
             {
                 title: "Comprehensive Testing",
-                description: "Implemented 67+ test cases covering all functionality to ensure reliability in a production environment where accuracy is critical."
+                description: "Implemented test cases covering all functionality to ensure reliability in a production environment where accuracy is critical."
             }
         ],
         challenges: [
@@ -108,7 +109,7 @@ export const projectsData = [
             },
             {
                 challenge: "Ensuring production reliability with limited testing environment",
-                solution: "Developed 67+ comprehensive test cases with mocked database connections to ensure bulletproof reliability before deploying to real operational use."
+                solution: "Developed comprehensive test cases with mocked database connections to ensure bulletproof reliability before deploying to real operational use."
             }
         ],
         tags: ["Python", "PyQt6", "Desktop Application", "SQL", "Data Analytics", "Problem Solving", "Production Software", "Business Intelligence", "Windows"]
@@ -219,6 +220,117 @@ export const projectsData = [
             }
         ],
         tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Supabase", "PostgreSQL", "Real-time", "Full Stack", "Production", "Responsive Design"]
+    },
+    {
+        id: "multi-agent-system",
+        title: "Multi-Agent AI System",
+        tagline: "Sophisticated multi-agent AI system with Flask, WebSocket communication, and intelligent orchestration",
+        image: multiAgentSystemImage,
+        repository: "https://github.com/Hauh4444/Multi-Agent-System",
+        overview: "A sophisticated multi-agent AI system built with Flask, featuring specialized agents for conversational AI, memory management, and intelligent matching. The system demonstrates advanced orchestration patterns and real-time communication capabilities with WebSocket-based chat interface, multi-user support, and dual AI provider integration (Google AI with OpenAI fallback).",
+        context: "Developed to showcase advanced AI system architecture and multi-agent coordination patterns. Built with comprehensive testing (68 unit and integration tests), real-time communication capabilities, and production-ready features including error handling, rate limiting, and graceful degradation. Demonstrates proficiency in AI integration, WebSocket communication, and distributed system design.",
+        features: [
+            {
+                title: "AI Orchestrator & Agent Coordination",
+                description: "Central coordination hub managing agent interactions and workflow with intelligent routing, session management, and real-time status monitoring across multiple specialized agents."
+            },
+            {
+                title: "Real-time WebSocket Communication",
+                description: "WebSocket-based chat interface with instant responses, multi-user support, concurrent session management, and isolated user contexts for seamless real-time interaction."
+            },
+            {
+                title: "Dual AI Provider Integration",
+                description: "Intelligent fallback system supporting both Google AI (Gemini) and OpenAI (GPT-3.5-turbo) with automatic failover, rate limiting, and robust error handling for maximum reliability."
+            },
+            {
+                title: "Specialized Agent Architecture",
+                description: "Conversational Agent for NLP and sentiment analysis, Memory Agent for session data and user preferences, and Matching Agent for intent analysis and entity extraction."
+            },
+            {
+                title: "Production-Ready Features",
+                description: "Comprehensive testing suite (68 tests), graceful degradation, connection pooling, intelligent caching, background cleanup processes, and security considerations with input validation."
+            }
+        ],
+        technicalStack: [
+            {
+                category: "Backend Framework",
+                items: [
+                    {
+                        name: "Flask",
+                        icon: "flask",
+                        description: "Python web framework powering the multi-agent system with Flask-SocketIO for real-time communication, RESTful API endpoints, and session management."
+                    },
+                    {
+                        name: "Python",
+                        icon: "python",
+                        description: "Core programming language leveraging async/await patterns, AI integration libraries, and comprehensive testing frameworks for building scalable agent systems."
+                    }
+                ]
+            },
+            {
+                category: "AI & Communication",
+                items: [
+                    {
+                        name: "WebSocket",
+                        icon: "websocket",
+                        description: "Real-time bidirectional communication enabling instant chat responses, live status updates, and seamless multi-user interaction with Flask-SocketIO integration."
+                    },
+                    {
+                        name: "Google AI",
+                        icon: "google",
+                        description: "Primary AI provider using Gemini API for natural language processing, with intelligent fallback to OpenAI for maximum reliability and performance."
+                    }
+                ]
+            },
+            {
+                category: "Database & Infrastructure",
+                items: [
+                    {
+                        name: "SQLite",
+                        icon: "sqlite",
+                        description: "Embedded database for session storage, user data, and conversation history with optimized queries and connection pooling for high-performance operations."
+                    },
+                    {
+                        name: "Redis",
+                        icon: "redis",
+                        description: "In-memory data store for caching, session management, and real-time data synchronization across multiple agent instances."
+                    }
+                ]
+            }
+        ],
+        technicalHighlights: [
+            {
+                title: "Advanced Multi-Agent Architecture",
+                description: "Designed and implemented sophisticated agent coordination system with specialized roles, intelligent routing, and seamless inter-agent communication patterns."
+            },
+            {
+                title: "Comprehensive Testing & Quality Assurance",
+                description: "Built 68 unit and integration tests covering all major functionality with full coverage, ensuring reliability and maintainability in production environments."
+            },
+            {
+                title: "Production-Grade Error Handling",
+                description: "Implemented multiple layers of error handling including API failures, rate limiting, network issues, and graceful degradation ensuring system continues functioning with reduced capabilities."
+            },
+            {
+                title: "Real-time Communication Excellence",
+                description: "WebSocket-based architecture supporting concurrent users with isolated contexts, real-time status updates, and efficient session management for seamless user experience."
+            }
+        ],
+        challenges: [
+            {
+                challenge: "Coordinating multiple AI agents with different specializations",
+                solution: "Designed a central orchestrator pattern with clear agent responsibilities, implemented intelligent routing based on user intent, and created standardized communication protocols between agents."
+            },
+            {
+                challenge: "Ensuring system reliability with external AI API dependencies",
+                solution: "Implemented comprehensive fallback mechanisms with dual AI providers, intelligent retry logic with exponential backoff, and graceful degradation to maintain service availability."
+            },
+            {
+                challenge: "Managing real-time communication with multiple concurrent users",
+                solution: "Leveraged Flask-SocketIO for WebSocket communication, implemented session isolation, connection pooling, and background cleanup processes to handle high concurrent user loads efficiently."
+            }
+        ],
+        tags: ["Flask", "Python", "WebSocket", "AI Integration", "Multi-Agent", "Real-time", "Testing", "Production", "Architecture"]
     },
     {
         id: "auction-house",
@@ -423,7 +535,6 @@ export const projectsData = [
         tagline: "Beautiful full-stack task management application with TypeScript, real-time sync, and modern design",
         image: taskManagementImage,
         repository: "https://github.com/Hauh4444/task-management",
-        demo: "https://main.dk2nrxxcpt5un.amplifyapp.com/",
         overview: "A comprehensive full-stack task management application showcasing modern web development best practices. Built with React, TypeScript, Supabase, and Tailwind CSS, featuring secure authentication, real-time database synchronization, row-level security, and a fully responsive design system. Demonstrates end-to-end development skills including component architecture, state management, database design, and production deployment.",
         context: "Created as a portfolio piece to demonstrate proficiency in modern full-stack development. Implements production-grade features including secure authentication flows, real-time data synchronization, comprehensive TypeScript implementation, custom design system, and database-level security with PostgreSQL Row Level Security policies.",
         features: [
