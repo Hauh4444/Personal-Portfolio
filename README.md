@@ -17,6 +17,7 @@ Welcome to my personal portfolio! This site serves as a central place to share w
 - **WIS Accuracy Report Generator** - Windows desktop application for inventory analytics
 - **Knowledge Hub** - Full-stack collaborative knowledge platform
 - **Multi-Agent AI System** - Sophisticated multi-agent AI system with Flask and WebSocket communication
+- **E-commerce System** - Full-stack e-commerce platform with Flask REST API and React + Vite frontend
 - **Auction House/E-commerce System** - Full-stack e-commerce platform with Scrum methodology
 - **Job Portal Mobile App** - React Native mobile application with Java backend
 - **Task Management System** - Full-stack task management with real-time sync

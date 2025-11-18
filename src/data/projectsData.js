@@ -1,6 +1,7 @@
 // Internal Assets
 import wisReportGeneratorImage from "@/assets/wis_report_generator.png";
 import auctionHouseImage from "@/assets/auction_house.png";
+import ecommerceImage from "@/assets/e-commerce.png";
 import knowledgeHubImage from "@/assets/knowledge_hub.png";
 import taskManagementImage from "@/assets/task-management.png";
 import eventManagementImage from "@/assets/event_management.png";
@@ -331,6 +332,122 @@ export const projectsData = [
             }
         ],
         tags: ["Flask", "Python", "WebSocket", "AI Integration", "Multi-Agent", "Real-time", "Testing", "Production", "Architecture"]
+    },
+    {
+        id: "ecommerce-system",
+        title: "E-commerce System",
+        tagline: "Full-stack e-commerce platform with Flask REST API and React + Vite frontend, rebuilt with cleaner architecture",
+        image: ecommerceImage, 
+        repository: "https://github.com/Hauh4444/E-commerce-System",
+        overview: "A full-stack reference implementation for a minimal e-commerce platform built with a Flask REST API and a React + Vite single-page frontend. This is a solo redevelopment of a previous e-commerce platform, rebuilt with cleaner, more maintainable code and improved architecture. The repository is organized as a multi-project workspace so that each service can be developed and deployed independently while sharing a common product definition.",
+        context: "Created as a solo redevelopment project to demonstrate improved coding practices and architecture. Focuses on core e-commerce functionality while emphasizing best coding practices, maintainability, and performance. Built as a monorepo with separate backend and frontend services that can be developed and deployed independently.",
+        features: [
+            {
+                title: "Token-Based Authentication",
+                description: "Secure JWT-based authentication system with registration and login flows, providing protected routes and user session management."
+            },
+            {
+                title: "Product Catalogue Management",
+                description: "Complete CRUD operations for products with search functionality, optimistic pricing data, and comprehensive product management endpoints."
+            },
+            {
+                title: "Cart & Order Management",
+                description: "Full shopping cart functionality with order processing, backed by MongoDB document collections for flexible data storage and retrieval."
+            },
+            {
+                title: "Modern React Storefront",
+                description: "Professional storefront built with React 19, featuring routing, context-based state management, and reusable UI components with Radix UI primitives."
+            },
+            {
+                title: "TypeScript & Developer Experience",
+                description: "Full TypeScript implementation with ESLint and TailwindCSS for consistent frontend developer experience, type safety, and maintainable codebase."
+            }
+        ],
+        technicalStack: [
+            {
+                category: "Frontend",
+                items: [
+                    {
+                        name: "React",
+                        icon: "react",
+                        description: "React 19 with modern hooks, context-based state management, and component composition for building a responsive storefront interface."
+                    },
+                    {
+                        name: "TypeScript",
+                        icon: "typescript",
+                        description: "TypeScript 5 for full type safety across the frontend, ensuring compile-time error catching and improved developer experience."
+                    },
+                    {
+                        name: "Vite",
+                        icon: "vite",
+                        description: "Vite 7 for lightning-fast development server, optimized builds, and excellent developer experience with HMR."
+                    },
+                    {
+                        name: "Tailwind CSS",
+                        icon: "tailwindcss",
+                        description: "Utility-first CSS framework for consistent styling, combined with Radix UI primitives for accessible, reusable components."
+                    }
+                ]
+            },
+            {
+                category: "Backend",
+                items: [
+                    {
+                        name: "Flask",
+                        icon: "flask",
+                        description: "Flask 3 REST API with route blueprints, JWT authentication helpers, CORS support, and clean separation of concerns."
+                    },
+                    {
+                        name: "Python",
+                        icon: "python",
+                        description: "Python 3 with PyMongo for MongoDB integration, providing robust backend services and API endpoints."
+                    }
+                ]
+            },
+            {
+                category: "Database",
+                items: [
+                    {
+                        name: "MongoDB",
+                        icon: "mongodb",
+                        description: "MongoDB document database for flexible storage of products, carts, orders, and user data with local or managed cluster support."
+                    }
+                ]
+            }
+        ],
+        technicalHighlights: [
+            {
+                title: "Monorepo Architecture",
+                description: "Organized as a multi-project workspace with independent backend and frontend services, enabling separate development and deployment while sharing common definitions."
+            },
+            {
+                title: "Clean Code & Best Practices",
+                description: "Solo redevelopment focusing on maintainable code, improved architecture, and adherence to best coding practices for long-term sustainability."
+            },
+            {
+                title: "Modern Full-Stack Stack",
+                description: "Integration of React 19, TypeScript 5, Vite 7, Flask 3, and MongoDB demonstrating proficiency across modern web development technologies."
+            },
+            {
+                title: "Production-Ready Structure",
+                description: "Comprehensive project structure with environment configuration, ESLint/TypeScript tooling, and deployment-ready setup for both services."
+            }
+        ],
+        challenges: [
+            {
+                challenge: "Rebuilding with improved architecture and cleaner code",
+                solution: "Redesigned the entire system from scratch, applying lessons learned to create a more maintainable monorepo structure with clear separation between backend and frontend services, improved error handling, and better code organization."
+            },
+            {
+                challenge: "Managing independent services in a monorepo",
+                solution: "Organized the repository as a multi-project workspace with separate configuration files, dependency management, and deployment strategies for each service while maintaining shared product definitions and documentation."
+            },
+            {
+                challenge: "Ensuring type safety across frontend and API boundaries",
+                solution: "Implemented full TypeScript on the frontend with proper type definitions, ensuring type safety when consuming the Flask REST API and maintaining consistency between frontend and backend data structures."
+            }
+        ],
+        tags: ["React", "TypeScript", "Flask", "MongoDB", "Vite", "Tailwind CSS", "Full Stack", "REST API", "E-commerce", "Monorepo"]
     },
     {
         id: "auction-house",
