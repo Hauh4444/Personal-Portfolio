@@ -10,110 +10,114 @@ import multiAgentSystemImage from "@/assets/multi-agent-system.png";
 
 export const projectsData = [
     {
-        id: "wis-accuracy-report-generator",
-        title: "WIS Accuracy Report Generator",
-        tagline: "Windows desktop application solving real business problems through automated accuracy reporting and data analytics",
-        image: wisReportGeneratorImage,
-        repository: "https://github.com/Hauh4444/WIS-Accuracy-Data-Analytics",
-        overview: "A professional Windows desktop application born from identifying real operational gaps while working as an inventory counter at WIS International. Despite being in a non-technical counting role, I consistently worked closely with managers and assisted teams during the inventory process. Together, we identified critical limitations in available tools, managers lacked access to individual employee accuracy metrics, team statistics by zone, and clear service miscount visibility. I leveraged my software engineering skills to build this solution, which now actively supports day-to-day operations and management decision-making.",
-        context: "Created while working as an inventory counter who demonstrated exceptional performance, leading to close collaboration with management. Recognized operational inefficiencies and missing analytics that managers needed but couldn't access. Built this tool to solve real business problems, providing the visibility and metrics that improve operational efficiency and team performance.",
-        features: [
+        "id": "wis-accuracy-report-generator",
+        "title": "WIS Accuracy Report Generator",
+        "tagline": "Windows desktop application providing automated accuracy reporting, analytics, and historical inventory insights",
+        "image": wisReportGeneratorImage,
+        "repository": "https://github.com/Hauh4444/WIS-Accuracy-Data-Analytics",
+        "overview": "A professional Windows-only Python application developed to generate detailed accuracy reports for WIS International using inventory data. Built after observing operational inefficiencies while working as an inventory counter, it empowers managers with employee accuracy metrics, zone analytics, and discrepancy tracking. The tool integrates store information, historical inventories, and season-to-date statistics into professional PDF reports, streamlining decision-making and improving operational efficiency.",
+        "context": "Developed while working operationally in inventory counting, collaborating closely with management to identify gaps in analytics and reporting. The application was designed to be user-friendly for non-technical managers, providing actionable insights from inventory data that were previously inaccessible.",
+        "features": [
             {
-                title: "Individual Employee Accuracy Metrics",
-                description: "Provides detailed accuracy reports for each employee with UPH calculations and discrepancy tracking, filling a critical gap managers previously couldn't access."
+                "title": "Windows-Only Application",
+                "description": "Built specifically for Windows with Microsoft Access database connectivity for real operational environments."
             },
             {
-                title: "Team Statistics by Zone/Department",
-                description: "Delivers comprehensive zone-based analytics showing team performance across different zones, enabling targeted improvements."
+                "title": "Two-Step Database Loading",
+                "description": "Supports automatic database resolution via job number input with a manual fallback file browser, ensuring flexibility in real-world workflows."
             },
             {
-                title: "Service Miscount Visibility",
-                description: "Clearly identifies and tracks service miscounts with discrepancy reports, making it easy to spot patterns and address recurring issues."
+                "title": "Historical & Season-to-Date Analytics",
+                "description": "Stores and retrieves historical inventory data and aggregated season statistics locally, enabling comparison and performance tracking over time."
             },
             {
-                title: "Two-Step Database Loading",
-                description: "Smart database connection with job number auto-resolution and manual fallback, designed for real-world operational flexibility."
+                "title": "Employee Hours & UPH Metrics",
+                "description": "Interactive input for employee hours and automated UPH calculations integrated into detailed employee reports."
             },
             {
-                title: "Professional PDF Reports",
-                description: "Generates three integrated reports (Employee, Team, Discrepancy) with store headers as browser-ready PDFs for immediate printing and distribution."
+                "title": "Zone-Based Analytics",
+                "description": "Generates analytics by zone, including discrepancy tracking and performance evaluation, helping managers identify problem areas."
+            },
+            {
+                "title": "Professional PDF Reports",
+                "description": "Generates combined Employee, Zone, and Discrepancy reports with store headers, rendered as PDFs ready for printing or distribution."
             }
         ],
-        technicalStack: [
+        "technicalStack": [
             {
-                category: "Frontend/Desktop",
-                items: [
+                "category": "Frontend/Desktop",
+                "items": [
                     {
-                        name: "PyQt6",
-                        icon: "application",
-                        description: "Modern Python binding for Qt6 framework, providing a native-looking desktop application with rich UI components and excellent cross-platform support."
+                        "name": "PyQt6",
+                        "icon": "application",
+                        "description": "Provides a native-looking desktop interface with modern UI components suitable for non-technical users."
                     }
                 ]
             },
             {
-                category: "Backend/Logic",
-                items: [
+                "category": "Backend/Logic",
+                "items": [
                     {
-                        name: "Python",
-                        icon: "python",
-                        description: "Core programming language leveraging its powerful data processing libraries and ease of database integration."
+                        "name": "Python",
+                        "icon": "python",
+                        "description": "Used for core logic, database integration, and data processing."
                     },
                     {
-                        name: "Jinja2",
-                        icon: "template",
-                        description: "Template engine used for generating dynamic PDF reports with complex layouts and conditional formatting."
+                        "name": "Jinja2",
+                        "icon": "template",
+                        "description": "Template engine for generating dynamic, professionally formatted PDF reports."
                     }
                 ]
             },
             {
-                category: "Database",
-                items: [
+                "category": "Database",
+                "items": [
                     {
-                        name: "Access",
-                        icon: "access",
-                        description: "Source database system containing inventory data, accessed through ODBC connections."
+                        "name": "Access",
+                        "icon": "access",
+                        "description": "Source database containing inventory data, accessed via ODBC."
                     },
                     {
-                        name: "SQL",
-                        icon: "sql",
-                        description: "Used for complex data queries, joins, and aggregations to calculate accuracy metrics and statistics."
+                        "name": "SQL",
+                        "icon": "sql",
+                        "description": "Used for data querying, joins, and aggregations to calculate accuracy metrics and analytics."
                     }
                 ]
             }
         ],
-        technicalHighlights: [
+        "technicalHighlights": [
             {
-                title: "Problem Identification & Solution Design",
-                description: "Identified critical business gaps while working operationally, then designed and implemented a technical solution that directly addresses real workflow inefficiencies."
+                "title": "Real Operational Problem Solving",
+                "description": "Translated observed workflow inefficiencies into a functional desktop application that improves decision-making and reporting."
             },
             {
-                title: "Production-Ready Desktop Application",
-                description: "Built a robust Windows application used in daily operations by managers, demonstrating ability to deliver production software that solves real business problems."
+                "title": "Production-Ready Application",
+                "description": "Windows desktop tool actively used in daily operations, demonstrating capability to deliver software that solves real business problems."
             },
             {
-                title: "Complex Data Analytics",
-                description: "Engineered multi-table SQL queries across 8+ database tables to calculate accuracy metrics, UPH statistics, and zone-based analytics from raw inventory data."
+                "title": "Advanced Data Processing",
+                "description": "Engineered queries and data models to calculate accuracy, UPH, and zone analytics from inventory and historical data."
             },
             {
-                title: "Comprehensive Testing",
-                description: "Implemented test cases covering all functionality to ensure reliability in a production environment where accuracy is critical."
+                "title": "Reliable Testing",
+                "description": "Comprehensive test suite ensures reliability in production, even with complex inventory workflows and limited test environments."
             }
         ],
-        challenges: [
+        "challenges": [
             {
-                challenge: "Understanding and accessing proprietary database structure",
-                solution: "Reverse-engineered the Microsoft Access database schema through hands-on exploration and documentation, mapping relationships between 8+ tables to extract meaningful business metrics."
+                "challenge": "Understanding proprietary database structure",
+                "solution": "Mapped and documented source database tables to extract meaningful business metrics without relying on exact schemas."
             },
             {
-                challenge: "Building for non-technical users in fast-paced operations",
-                solution: "Designed an intuitive PyQt6 interface with clear workflows and fallback options, ensuring managers could generate reports quickly during active inventory counts without technical support."
+                "challenge": "Designing for non-technical users",
+                "solution": "Built an intuitive interface with clear workflows, allowing managers to generate reports during active inventory counts without technical assistance."
             },
             {
-                challenge: "Ensuring production reliability with limited testing environment",
-                solution: "Developed comprehensive test cases with mocked database connections to ensure bulletproof reliability before deploying to real operational use."
+                "challenge": "Ensuring production reliability",
+                "solution": "Developed tests and mocked database workflows to validate functionality before deploying in operational environments."
             }
         ],
-        tags: ["Python", "PyQt6", "Desktop Application", "SQL", "Data Analytics", "Problem Solving", "Production Software", "Business Intelligence", "Windows"]
+        "tags": ["Python", "PyQt6", "Desktop Application", "SQL", "Data Analytics", "Problem Solving", "Production Software", "Business Intelligence", "Windows"]
     },
     {
         id: "knowledge-hub",
@@ -121,7 +125,6 @@ export const projectsData = [
         tagline: "Professional collaborative knowledge platform combining the best of Notion, GitHub Wiki, and LinkedIn",
         image: knowledgeHubImage,
         repository: "https://github.com/Hauh4444/knowledge-hub",
-        demo: "https://www.knowledgehubpro.org/",
         overview: "A comprehensive knowledge management and collaboration platform that seamlessly blends the best aspects of Notion's structured content, GitHub Wiki's knowledge sharing, and LinkedIn's professional networking. Built with React, TypeScript, and Supabase, it provides real-time collaboration, smart search, project management, and professional profiles. all in a fully responsive, production-ready application.",
         context: "Created to solve knowledge silos and fragmented collaboration tools in professional environments. Provides a unified platform where teams can create structured knowledge resources, collaborate on projects, track expertise, and build professional connections, all while maintaining real-time synchronization and intelligent search capabilities.",
         features: [
