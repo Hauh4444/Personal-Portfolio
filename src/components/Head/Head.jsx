@@ -44,7 +44,7 @@ const Head = () => {
                 </h4>
             </div>
             <h3>
-                Software Engineer &<br />Full Stack Developer
+                Software Engineer
             </h3>
         </div>
     );
